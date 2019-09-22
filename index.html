@@ -36,17 +36,35 @@
           <a href="#">Поиск гостиниц в Седоне</a> <!-- Ссылка -->
       </section>
 
-        <section>
+        <form action="index.html" method="post"> <!-- Форма -->
             <ul>
-              <li>Дата Заезда</li>
-              <li>Дата Выезда</li>
+              <li>
+                <label for="date-arrival">Дата заезда:</label>
+                  <input type="text" id="date-arrival" name="date of arrival" placeholder="24 апреля 2017" required>
+                  <button type="button" name="button of arrival"><img src="img/calendar.svg" alt="Кнопка открывающая календарь"></button>
+              </li>
+              <li>
+                <label for="date-departure">Дата выезда:</label>
+                  <input type="text" id="date-departure" name="date of departure" placeholder="4 июля 2017" required>
+                  <button type="button" name="button of departure"><img src="img/calendar.svg" alt="Кнопка открывающая календарь"></button>
+              </li>
             </ul>
             <ul>
-              <li>Взрослые</li>
-              <li>Дети</li>
+              <li>
+                <label for="Number-adults">Взрослые:</label>
+                  <button type="button" name="button minus"><img src="img/minus.png" alt="меньше взрослых"></button>
+                  <input type="number" id="Number-adults" name="Number of adults" min="1" max="10">
+                  <button type="button" name="button plus"><img src="img/plus.png" alt="больше взрослых"></button>
+              </li>
+              <li>
+                <label for="Number-child">Дети:</label>
+                  <button type="button" name="button minus"><img src="img/minus.png" alt="меньше детей"></button>
+                  <input type="number" id="Number-child" name="Number of child" min="1" max="10">
+                  <button type="button" name="button plus"><img src="img/plus.png" alt="больше детей"></button>
+              </li>
             </ul>
               <a href="#">Найти</a> <!-- Ссылка -->
-      </section>
+      </form>
 <!-- Здесь нужно вставить карту -->
     </main>
     <footer>

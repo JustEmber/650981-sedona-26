@@ -18,16 +18,47 @@
     </header>
 
     <main>
+      <form action="index.html" method="post">
+
+         <ul><strong>Инфраструктура:</strong>
+           <li><label><input type="checkbox" name="pool" checked> Бассейн </label></li>
+           <li><label><input type="checkbox" name="parking"> Парковка </label></li>
+           <li><label><input type="checkbox" name="Wi-Fi"> Wi-Fi </label></li>
+        </ul>
+
+        <ul><strong>Тип жилья:</strong>
+          <li><label><input type="checkbox" name="hotel" checked> Гостиница </label></li>
+          <li><label><input type="checkbox" name="motel" checked> Мотель <label></li>
+          <li><label><input type="checkbox" name="apartments" checked> Аппартаменты </label></li>
+        </ul>
+
+        <input type="text" name="cost-from" placeholder="от 0">
+        <input type="text" name="cost-to" placeholder="до 3000"><br>
+
+        <button type="submit" name="button">Показать</button>
+      </form>
+      <strong>Найдено:</strong>
+      <section>
+        Сортировка:
+        <a href="#">по цене</a>
+        <a href="#">по типу</a>
+        <a href="#">по рейтингу</a>
+        <a href="#"><img src="img/icon-up-dir.svg" alt="посмотреть выше"></a>
+        <a href="#"><img src="img/icon-down-dir.svg" alt="посмотреть ниже"></a>
+      </section>
+
       <h1>Гостиницы</h1>
 <section>
   <ul>
     <li>
       <img src="img/amara.jpg" alt="Картинка Omara Resort & Spa" width="135" height="90">
       <h2><a href="#">Amara Resort &amp; Spa</a></h2><!-- Ссылки -->
-      <li></li><!-- Звезды рейтинга -->
-      <li></li>
-      <li></li>
-      <li></li>
+        <ul>
+          <li></li><!-- Звезды рейтинга -->
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       <p>Гостиница</p>
       <p>от 4000р</p>
       <a href="#">Подробнее</a><!-- Ссылки -->
@@ -37,9 +68,11 @@
     <li>
       <img src="img/desert.jpg" alt="Картинка Desert Quail Inn" width="135" height="90">
       <h2><a href="#">Desert Quail Inn</a></h2><!-- Ссылки -->
-      <li></li><!-- Звезды рейтинга -->
-      <li></li>
-      <li></li>
+        <ul>
+          <li></li><!-- Звезды рейтинга -->
+          <li></li>
+          <li></li>
+        </ul>
       <p>Отель</p>
       <p>от 3000р</p>
       <a href="#">Подробнее</a><!-- Ссылки -->
@@ -49,8 +82,10 @@
     <li>
       <img src="img/villas.jpg" alt="Картинка Villas At Poco Diablo" width="135" height="90">
       <h2><a href="#">Villas At Poco Diablo</a></h2><!-- Ссылки -->
-      <li></li><!-- Звезды рейтинга -->
-      <li></li>
+        <ul>
+          <li></li><!-- Звезды рейтинга -->
+          <li></li>
+        </ul>
       <p>Апартаменты</p>
       <p>от 2000р</p>
       <a href="#">Подробнее</a><!-- Ссылки -->

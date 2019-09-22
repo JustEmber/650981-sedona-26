@@ -36,45 +36,72 @@
           <a href="#">Поиск гостиниц в Седоне</a> <!-- Ссылка -->
       </section>
 
-        <form action="index.html" method="post"> <!-- Форма -->
-            <ul>
-              <li>
+      <form action="index.html" method="post"> <!-- Форма -->
+        <fieldset>
+            <div>
                 <label for="date-arrival">Дата заезда:</label>
                   <input type="text" id="date-arrival" name="date of arrival" placeholder="24 апреля 2017" required>
-                  <button type="button" name="button of arrival"><img src="img/calendar.svg" alt="Кнопка открывающая календарь"></button>
-              </li>
-              <li>
+                  <button type="button" name="button of arrival">
+                    <img src="img/calendar.svg" alt="Кнопка открывающая календарь">
+                  </button>
+            </div>
+            <div>
                 <label for="date-departure">Дата выезда:</label>
                   <input type="text" id="date-departure" name="date of departure" placeholder="4 июля 2017" required>
-                  <button type="button" name="button of departure"><img src="img/calendar.svg" alt="Кнопка открывающая календарь"></button>
-              </li>
-            </ul>
-            <ul>
-              <li>
+                  <button type="button" name="button of departure">
+                    <img src="img/calendar.svg" alt="Кнопка открывающая календарь">
+                  </button>
+            </div>
+            <div>
                 <label for="Number-adults">Взрослые:</label>
-                  <button type="button" name="button minus"><img src="img/minus.png" alt="меньше взрослых"></button>
+                  <button type="button" name="button minus">
+                    <img src="img/minus.png" alt="меньше взрослых">
+                  </button>
                   <input type="number" id="Number-adults" name="Number of adults" min="1" max="10">
-                  <button type="button" name="button plus"><img src="img/plus.png" alt="больше взрослых"></button>
-              </li>
-              <li>
+                  <button type="button" name="button plus">
+                    <img src="img/plus.png" alt="больше взрослых">
+                  </button>
+            </div>
+            <div>
                 <label for="Number-child">Дети:</label>
-                  <button type="button" name="button minus"><img src="img/minus.png" alt="меньше детей"></button>
+                  <button type="button" name="button minus">
+                    <img src="img/minus.png" alt="меньше детей">
+                  </button>
                   <input type="number" id="Number-child" name="Number of child" min="1" max="10">
-                  <button type="button" name="button plus"><img src="img/plus.png" alt="больше детей"></button>
-              </li>
-            </ul>
-              <a href="#">Найти</a> <!-- Ссылка -->
+                  <button type="button" name="button plus">
+                    <img src="img/plus.png" alt="больше детей">
+                  </button>
+            </div>
+              <button type="submit" name="button">Найти</button> <!-- Ссылка -->
+        </fieldset>
       </form>
+
 <!-- Здесь нужно вставить карту -->
     </main>
     <footer>
       <p>#VISITSEDONA</p>
         <ul>
-          <li><a href="#"><img src="img/twitter.svg" alt="Twitter" width="46" height="48"></a></li>
-          <li><a href="#"><img src="img/fb-icon.svg" alt="Facebook" width="46" height="48"></a></li>
-          <li><a href="#"><img src="img/youtube.svg" alt="Youtube" width="46" height="48"></a></li>
+          <li>
+            <a href="#" aria-label="Седона на Twitter">
+              <img src="img/twitter.svg" alt="Twitter" width="46" height="48">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Седона на Facbook">
+              <img src="img/fb-icon.svg" alt="Facebook" width="46" height="48">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Седона на Yotube">
+              <img src="img/youtube.svg" alt="Youtube" width="46" height="48">
+            </a>
+          </li>
         </ul>
-        <p>WEBSITE BY <a href="https://htmlacademy.ru"><img src="img\logo-htmlacademy.svg" alt="logo HTMLAcademy" width="115" height="41"></a></p> <!-- Ссылки -->
+        <p>WEBSITE BY
+          <a href="https://htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" alt="logo HTMLAcademy" width="115" height="41">
+          </a>
+        </p> <!-- Ссылки -->
 
     </footer>
   </body>

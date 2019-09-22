@@ -18,41 +18,77 @@
     </header>
 
     <main>
-      <form action="index.html" method="post">
 
-         <ul><strong>Инфраструктура:</strong>
-           <li><label><input type="checkbox" name="pool" checked> Бассейн </label></li>
-           <li><label><input type="checkbox" name="parking"> Парковка </label></li>
-           <li><label><input type="checkbox" name="Wi-Fi"> Wi-Fi </label></li>
+    <form action="index.html" method="post">
+      <fieldset>
+        <legend>Инфраструктура:</legend>
+         <ul>
+             <li>
+               <label>
+                 <input type="checkbox" name="pool" checked> Бассейн
+               </label>
+             </li>
+             <li>
+               <label>
+                 <input type="checkbox" name="parking"> Парковка
+               </label>
+             </li>
+             <li>
+               <label>
+                 <input type="checkbox" name="Wi-Fi"> Wi-Fi
+               </label>
+             </li>
         </ul>
-
-        <ul><strong>Тип жилья:</strong>
-          <li><label><input type="checkbox" name="hotel" checked> Гостиница </label></li>
-          <li><label><input type="checkbox" name="motel" checked> Мотель <label></li>
-          <li><label><input type="checkbox" name="apartments" checked> Аппартаменты </label></li>
+      </fieldset>
+      <fieldset>
+        <legend>Тип жилья:</legend>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" name="hotel" checked> Гостиница
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="motel" checked> Мотель
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="apartments" checked> Аппартаменты
+            </label>
+          </li>
         </ul>
-
+      </fieldset>
+      <fieldset>
         <input type="text" name="cost-from" placeholder="от 0">
         <input type="text" name="cost-to" placeholder="до 3000"><br>
 
         <button type="submit" name="button">Показать</button>
-      </form>
+      </fieldset>
+    </form>
       <strong>Найдено:</strong>
-      <section>
-        Сортировка:
-        <a href="#">по цене</a>
-        <a href="#">по типу</a>
-        <a href="#">по рейтингу</a>
-        <a href="#"><img src="img/icon-up-dir.svg" alt="посмотреть выше"></a>
-        <a href="#"><img src="img/icon-down-dir.svg" alt="посмотреть ниже"></a>
-      </section>
+        <section>
+          Сортировка:
+          <a href="#">по цене</a>
+          <a href="#">по типу</a>
+          <a href="#">по рейтингу</a>
+          <a href="#">
+            <img src="img/icon-up-dir.svg" alt="посмотреть выше">
+          </a>
+          <a href="#">
+            <img src="img/icon-down-dir.svg" alt="посмотреть ниже">
+          </a>
+        </section>
 
       <h1>Гостиницы</h1>
 <section>
   <ul>
     <li>
       <img src="img/amara.jpg" alt="Картинка Omara Resort & Spa" width="135" height="90">
-      <h2><a href="#">Amara Resort &amp; Spa</a></h2><!-- Ссылки -->
+      <h2>
+        <a href="#">Amara Resort &amp; Spa</a>
+      </h2><!-- Ссылки -->
         <ul>
           <li></li><!-- Звезды рейтинга -->
           <li></li>
@@ -67,7 +103,9 @@
     </li>
     <li>
       <img src="img/desert.jpg" alt="Картинка Desert Quail Inn" width="135" height="90">
-      <h2><a href="#">Desert Quail Inn</a></h2><!-- Ссылки -->
+      <h2>
+        <a href="#">Desert Quail Inn</a>
+      </h2><!-- Ссылки -->
         <ul>
           <li></li><!-- Звезды рейтинга -->
           <li></li>
@@ -81,7 +119,9 @@
     </li>
     <li>
       <img src="img/villas.jpg" alt="Картинка Villas At Poco Diablo" width="135" height="90">
-      <h2><a href="#">Villas At Poco Diablo</a></h2><!-- Ссылки -->
+      <h2>
+        <a href="#">Villas At Poco Diablo</a>
+      </h2><!-- Ссылки -->
         <ul>
           <li></li><!-- Звезды рейтинга -->
           <li></li>
@@ -97,12 +137,28 @@
     </main>
     <footer>
       <p>#VISITSEDONA</p>
-        <ul>
-          <li><a href="#"><img src="img/twitter.svg" alt="Twitter" width="46" height="48"></a></li>
-          <li><a href="#"><img src="img/fb-icon.svg" alt="Facebook" width="46" height="48"></a></li>
-          <li><a href="#"><img src="img/youtube.svg" alt="Youtube" width="46" height="48"></a></li>
-        </ul>
-        <p>WEBSITE BY <a href="https://htmlacademy.ru"><a href="#"><img src="img\logo-htmlacademy.svg" alt="logo HTMLAcademy" width="115" height="41"></a></p> <!-- Ссылки -->
+      <ul>
+        <li>
+          <a href="#" aria-label="Седона на Twitter">
+            <img src="img/twitter.svg" alt="Twitter" width="46" height="48">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Седона на Facbook">
+            <img src="img/fb-icon.svg" alt="Facebook" width="46" height="48">
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Седона на Yotube">
+            <img src="img/youtube.svg" alt="Youtube" width="46" height="48">
+          </a>
+        </li>
+      </ul>
+        <p>WEBSITE BY
+          <a href="https://htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" alt="logo HTMLAcademy" width="115" height="41">
+          </a>
+        </p> <!-- Ссылки -->
 
     </footer>
   </body>

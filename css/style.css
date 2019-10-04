@@ -8,8 +8,9 @@ body {
   text-transform: uppercase;
 }
 
-div.wrapper {
+div.container {
   width: 1200px;
+  margin: 0 auto;
   box-shadow: 0 0 1px 0 #7e7e7e;
   background-color: #7e7e7e;
   background-image: url("img/background.jpg");
@@ -17,18 +18,15 @@ div.wrapper {
   background-repeat: no-repeat;
 }
 
-div.wrapper-second {
+div.container-second {
   width: 1280px;
+  margin: 0 auto;
   box-shadow: 0 0 1px 0 #7e7e7e;
   background-color: #ffffff;
 }
 
 a {
   text-decoration: none;
-}
-
-h1 {
-  font-size: 0;
 }
 
 .button {
@@ -89,12 +87,16 @@ h1 {
   color: #80b2d3;
 }
 
+.main-nav a:active {
+  color: #746457;
+}
+
 .main-nav a:focus {
   color: #cacaca;
 }
 
-.main-nav a:active {
-  color: #746457;
+.main-background {
+  text-align: center;
 }
 
 .sedona-info {
@@ -154,6 +156,12 @@ h1 {
   color: #000000;
 }
 
+.find-header {
+    font-family: inherit;
+    font-size: 21px;
+    font-weight: bold;
+}
+
 .more-detail {
   background-color: #82b3d3;
   color: #ffffff;
@@ -193,19 +201,20 @@ h1 {
 }
 
 .social-bg {
+  position: relative;
   background-color: #81b2d2;
 }
 
 .social-button {
-  fill: #ffffff;
+  fill: rgba(255, 255, 255, 1);
 }
 
 .social-bg:hover {
   background-color: #669ebf;
 }
 
-.social-button:active {
-  fill: #87b6d2;
+.social-bg:active .social-button {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .social-bg:active {
@@ -213,13 +222,13 @@ h1 {
 }
 
 .footer-site-by {
-  box-sizing: content-box;
   vertical-align: middle;
+  width: 110px;
 }
-.footer-site-by-logo:hover {
+.footer-site-by:hover .footer-site-by-logo {
   fill: #82b3d1;
 }
-.footer-site-by-logo:active {
+.footer-site-by:active .footer-site-by-logo {
   fill: #bebcbd;
 }
 

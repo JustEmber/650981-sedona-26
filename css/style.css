@@ -11,7 +11,7 @@ body {
 div.container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 1px 0 #7e7e7e;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.3);
   background-color: #7e7e7e;
   background-image: url("img/background.jpg");
   background-position: top center;
@@ -29,13 +29,22 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding: 0;
+}
+
+.hide {
+  display: none;
+}
+
+/*Кнопки*/
+
 .button {
   font: inherit;
-  text-align: center;
   color: #000000;
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: #ffffff;
+  text-decoration: none;
 }
 
 .button-find {
@@ -44,11 +53,63 @@ a {
   border: none;
 }
 
-.button-search {
-  display: block;
-  background-color: #766257;
-  color: #ffffff;
+/*Хедер*/
+
+.main-nav {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.main-nav a:hover {
+  color: #80b2d3;
+}
+
+.main-nav a:active {
+  color: #746457;
+}
+
+.main-nav a:focus {
+  color: #cacaca;
+}
+
+.main-background {
   text-align: center;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+  height: 56px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  min-width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 40px;
+  align-items: center;
+}
+
+.img-logo {
+  align-self: flex-start;
+}
+
+
+/*Основной контент*/
+
+.logo-sedona {
+  margin-top: 75px;
 }
 
 .interested {
@@ -72,31 +133,6 @@ a {
 .holet-search {
   background-color: #ffffff;
   display: none;
-}
-
-.main-nav {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  color: #000000;
-  background-color: #ffffff;
-  list-style: none;
-}
-
-.main-nav a:hover {
-  color: #80b2d3;
-}
-
-.main-nav a:active {
-  color: #746457;
-}
-
-.main-nav a:focus {
-  color: #cacaca;
-}
-
-.main-background {
-  text-align: center;
 }
 
 .sedona-info {
@@ -123,8 +159,72 @@ a {
   font-weight: bold;
 }
 
-.main-footer {
+.real-cities {
+  display: flex;
+  justify-content: space-between;
+}
+
+.real-cities-text {
+  font-family: inherit;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-align: center;
+  padding-top: 30px;
+  width: 400px;
+}
+
+.real-cities-text p:first-child {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.real-cities-text p:nth-child(n+2) {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.real-cities-text p:nth-child(3) {
+  padding-top: 10px;
+}
+
+.real-cities-img {
+  display: flex;
+  background-color: #48544a;
+}
+
+.recommendations {
+  font-family: inherit;
   background-color: #ffffff;
+}
+
+.recommendations {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+
+}
+.recommend-items {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+
+.recommend-margin {
+  margin: 30px 0;
+}
+
+.recommend-items p:first-of-type {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.recommend-items p:nth-of-type(2) {
+  font-size: 14px;
+}
+
+.recommend-items p:last-of-type {
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .main-part {
@@ -163,9 +263,12 @@ a {
 }
 
 .more-detail {
-  background-color: #82b3d3;
+  font-weight: bold;
   color: #ffffff;
   text-align: center;
+  padding: 5px 16px;
+  height: 20px;
+  background-color: #82b3d3;
 }
 
 .more-detail:hover {
@@ -177,9 +280,12 @@ a {
 }
 
 .reserve {
-  background-color: #766257;
+  font-weight: bold;
   color: #ffffff;
   text-align: center;
+  padding: 5px 16px;
+  height: 20px;
+  background-color: #766257;
 }
 .reserve:hover {
   background-color: #604e44;
@@ -196,13 +302,146 @@ a {
   font-weight: bold;
 }
 
-.footer-social ul {
+
+.button-search {
+  background-color: #7e7e7e;
+  text-align: center;
+}
+
+.button-search a:hover {
+  background-color: #604e44;
+}
+
+.button-search a:focus {
+  background-color: #503e32;
+  color: #918a84;
+}
+
+.search {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #766257;
+  padding: 30px 140px;
+}
+/* сетка основного меню второй страницы */
+.main-part {
+  display: flex;
+
+}
+
+.first-menu,
+.second-menu,
+.last-menu {
+  margin: 30px;
+  line-height: 30px;
+}
+.first-menu {
+  margin-left: 55px;
+}
+.second-menu {
+  margin-left: 100px;
+}
+.last-menu {
+margin-left: 340px;
+}
+
+.last-menu {
+  display: block;
+  width: 320px;
+  text-align: center;
+}
+
+.heading-search {
+  text-align: left;
+}
+
+.find {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  margin-top: 15px;
+  margin-left: 65px;
+}
+
+.find section {
+  font-size: 12px;
+  padding-left: 40px;
+}
+
+.find a:nth-child(n+1):nth-child(-n+4) {
+  padding-left: 50px;
+}
+
+.hotels-list {
+  display: flex;
+  align-items: center;
+  background-image: url("img/background-white.png");
+  height: 95px;
+  box-shadow: 0 0 2px 0 rgba(0, 1, 1, 0.2);
+  padding: 30px 65px;
+}
+
+.hotels-part {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  flex-basis: 300px;
+  height: 95px;
+}
+
+.name-hotel {
+  margin: 0;
+}
+
+.hotels-list p {
+  margin: 0;
+  width: 130px;
+}
+
+.hotels-list a {
+  margin-right: 10px;
+}
+
+.hotels-rating {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  margin-left: 550px;
+}
+
+/*Футер*/
+
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  height: 150px;
+  padding: 0 100px;
+}
+
+.main-footer {
+  background-color: #ffffff;
+}
+
+.footer-social {
   list-style: none;
+  display: flex;
+
 }
 
 .social-bg {
-  position: relative;
+  display: flex;
+  padding: 15px;
   background-color: #81b2d2;
+  margin: 0 5px;
 }
 
 .social-button {
@@ -232,19 +471,8 @@ a {
   fill: #bebcbd;
 }
 
-.search {
-  background: #7e7e7e;
-}
-
-.search a:hover {
-  background: #604e44;
-}
-
-.search a:focus {
-  background: #503e32;
-  color: #918a84;
-}
-
-.hide {
-  display: none;
+.visit {
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: bold;
 }

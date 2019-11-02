@@ -8,12 +8,12 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container-index general-container">
+    <div class="general-container container-index">
 
       <header>
         <nav class="header-menu">
           <a href="index.html" class="logo">
-            <img src="img/logo.png" alt="логотип" width="140" height="72">
+            <img src="img/logo.png" width="140" height="72" alt="логотип сайта">
           </a>
           <ul class="main-nav">
             <li>
@@ -42,7 +42,7 @@
 
     <main>
       <div class="main-background">
-        <img src="img/wel-to-Sedona.png" class="logo-sedona" alt="Welcome to Sedona" width="459" height="353">
+        <img src="img/wel-to-Sedona.png" class="logo-sedona" width="459" height="353" alt="Welcome to Sedona">
       </div>
       <h1 class="hide">Город Седона</h1>
 
@@ -60,11 +60,11 @@
           <p>Седона &ndash; не аттранцион для туристов, там течёт своя жизнь</p>
         </section>
         <div class="real-cities-img">
-          <img src="img/real-sities.jpg" alt="Welcome to Sedona" width="800" height="256">
+          <img src="img/real-sities.jpg" width="800" height="256" alt="Фотография городка">
         </div>
       </div>
 
-      <section class="recommendations">
+      <section class="recommendations-height recommendations">
         <h2 class="hide">Рекомендуем</h2>
         <div class="recommend-items">
           <svg xmlns="http://www.w3.org/2000/svg" width="75" height="76" viewBox="0 -2 75 72"><g fill="#81B3D2"><path d="M29.656 65.033h16V41.21h-16v23.823zm2.937-20.899h10.125V62.11H32.593V44.134z"/><path d="M72.771 39.253l2.076-2.068-9.908-9.865V0H51.127v13.567L37.5 0 .152 37.185l2.077 2.068 7.832-7.795v37.618H6.124V72h63.875v-2.924H64.94V31.458l7.831 7.795zM62.002 69.076H12.999V28.534L37.5 4.149l24.502 24.385v40.542zm0-44.682l-7.938-7.902V2.924h7.938v21.47z"/><path d="M29.906 27.08c0 4.261 3.47 7.713 7.75 7.713 4.279 0 7.75-3.452 7.75-7.713 0-4.259-3.471-7.713-7.75-7.713-4.281 0-7.75 3.454-7.75 7.713zm7.75-4.945c2.744 0 4.969 2.214 4.969 4.945 0 2.732-2.225 4.948-4.969 4.948-2.746 0-4.97-2.216-4.97-4.948 0-2.731 2.225-4.945 4.97-4.945zM17.061 41.21h3v3.919h-3zM22.999 41.21h3v3.919h-3zM17.061 47.182h3v3.919h-3zM22.999 47.182h3v3.919h-3zM48.998 41.21h3v3.919h-3zM54.936 41.21h3v3.919h-3zM48.998 47.182h3v3.919h-3zM54.936 47.182h3v3.919h-3z"/></g></svg>
@@ -85,7 +85,7 @@
 
       <div class="real-cities">
         <div class="real-cities-img">
-          <img src="img/diablo-bridge.jpg" alt="Welcome to Sedona" width="800" height="256">
+          <img src="img/diablo-bridge.jpg" width="800" height="256" alt="Фотография Гор">
         </div>
         <div class="real-cities-text">
           <p>Там есть <br>мост дьявола</p>
@@ -118,50 +118,49 @@
         <p class="interested-header">Заинтересовались?</p>
         <p class="interested-footer">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="#" class="search">Поиск гостиницы в Седоне</a> <!-- Ссылка -->
-      </div>
-      <img src="img/map.png" class="map" alt="Карта">
 
-      <form action="https://echo.htmlacademy.ru" method="post"> <!-- Форма -->
-        <fieldset class="popup">
-          <div class="popup-container">
-            <div class="date-arrival">
-                  <label for="date-arrival">Дата заезда:</label>
-                  <input type="text" id="date-arrival" name="date of arrival" placeholder="24 апреля 2017" required>
-                  <button type="button" name="button of arrival">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path class="svg-color" d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path class="svg-color" d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-                  </button>
-            </div>
-            <div class="date-departure">
-                  <label for="date-departure">Дата выезда:</label>
-                  <input type="text" id="date-departure" name="date of departure" placeholder="4 июля 2017" required>
-                  <button type="button" name="button of departure">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path class="svg-color" d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path class="svg-color" d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-                  </button>
-            </div>
-            <div class="number-adults">
-                  <label for="number-adults">Взрослые:</label>
-                  <button type="button" class="button-minus" name="button minus">
-                    <p class="minus">&#8722;</p>
-                  </button>
-                  <input type="text" id="number-adults" name="Number of adults" placeholder="2">
-                  <button type="button" class="button-plus" name="button plus">
-                    <p class="plus">&plus;</p>
-                  </button>
-            </div>
-            <div class="number-child">
-                <label for="number-child">Дети:</label>
-                  <button type="button" class="button-minus" name="button minus">
-                    <p class="minus">&#8722;</p>
-                  </button>
-                  <input type="text" id="number-child" name="Number of child" placeholder="0">
-                  <button type="button" class="button-plus" name="button plus">
-                    <p class="plus">&plus;</p>
-                  </button>
-            </div>
-              <button type="submit" class="button-find" name="find">Найти</button> <!-- Ссылка -->
-          </div>
-        </fieldset>
-      </form>
+        <div class="popup-position">
+          <form action="https://echo.htmlacademy.ru" class="popup-container form" method="post"> <!-- Форма -->
+            <fieldset class="fieldset-popup">
+
+                <div class="date-arrival">
+                      <label for="date-arrival">Дата заезда:</label>
+                      <input type="text" id="date-arrival" name="date of arrival" placeholder="24 апреля 2017" required>
+                      <button type="button" name="button of arrival">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path class="svg-color" d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path class="svg-color" d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+                      </button>
+                </div>
+                <div class="date-departure">
+                      <label for="date-departure">Дата выезда:</label>
+                      <input type="text" id="date-departure" name="date of departure" placeholder="4 июля 2017" required>
+                      <button type="button" name="button of departure">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path class="svg-color" d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path class="svg-color" d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+                      </button>
+                </div>
+                <div class="number-adults">
+                      <label for="number-adults">Взрослые:</label>
+                      <button type="button" class="button-minus" name="button minus">&#8722;</button>
+                      <input type="text" id="number-adults" name="Number of adults" placeholder="2">
+                      <button type="button" class="button-plus" name="button plus">&plus;</button>
+                </div>
+                <div class="number-child">
+                    <label for="number-child">Дети:</label>
+                      <button type="button" class="button-minus" name="button minus">&#8722;</button>
+                      <input type="text" id="number-child" name="Number of child" placeholder="0">
+                      <button type="button" class="button-plus" name="button plus">&plus;</button>
+                </div>
+                  <button type="submit" class="button-find" name="find">Найти</button> <!-- Ссылка -->
+
+            </fieldset>
+          </form>
+        </div>
+
+      </div>
+
+    <section>
+      <h2 class="hide">Карта</h2>
+      <img src="img/map.png" class="map" alt="Карта">
+    </section>
     </main>
     <footer class="main-footer footer-margin">
       <p class="visit">&#35;VISITSEDONA</p>
